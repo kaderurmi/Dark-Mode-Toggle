@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Dark Mode Toggle</title>
+ <style>
+    /* Add CSS class for dark mode */
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+</style>
+  </head>
+  <body id="body">
+ <h1>PHP</h1>
+ <button id="switchModeBtn" >Switch Mode</button>
+
+ <script>
+    // Get the button element
+    var switchModeBtn = document.getElementById("switchModeBtn");
+
+    // Add click event listener to the button
+    switchModeBtn.addEventListener("click", function() {
+      // Call the function to toggle dark mode
+      applyDarkMode();
+    });
+
+    function applyDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
